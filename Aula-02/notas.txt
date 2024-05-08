@@ -1,0 +1,8 @@
+
+* a diferença entre adicionar a tag script no head ou no body
+é que na tag bloco head as informações são processadas antes
+do carregamento do body, também podem ocorrer erros de interpretação.
+
+* na criação dos arquivos JavaScript não adicione espaços ou caracteres especiais
+para evitar eventuais erros, e a extensão ".js" é muito importante
+
