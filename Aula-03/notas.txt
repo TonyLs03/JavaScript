@@ -1,0 +1,37 @@
+Precedência de execução>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <script src="meu_script.js"></script>		<<<<<<<<< TAG SCRIPT NO HEAD (erro)
+  </head>
+  <body>
+    <h1>Curso de JavaScript</h1>
+    <input type="text" placeholder="Teste de precedência" id="nome" disabled />
+
+  </body>
+</html>
+
+neste exemplo acima, acontece o erro pois o script quer executar algo que ainda não
+foi gerado, dessa forma acontecendo erro de precedência de execução, para corrigir
+o script tem de ser adicionado no final do body> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>Curso de JavaScript</h1>
+    <input type="text" placeholder="Teste de precedência" id="nome" disabled />
+
+    <script src="meu_script.js"></script>		<<<<<<<<< TAG SCRIPT NO FINAL DO BODY (solulção)
+  </body>
+</html>
+
