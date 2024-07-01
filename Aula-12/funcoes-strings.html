@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções nativas para manipular strings</title>
+    <script>
+      //propriedade length = mostra em numeros o tamanho da string
+      document.write("Tony Lima".length);
+
+      document.write("<br/>");
+
+      //função chartAt() = renderiza o caracter selecionado
+      document.write("Tony Lima".charAt(3));
+
+      document.write("<br/>");
+
+      //método indexOf() = retorna o número onde o caracter está posicionado
+      var nome = "Tony Lima";
+      document.write(nome.indexOf("n"));
+
+      document.write("<br/>");
+
+      //função replace() = substitui textos
+      document.write(nome.replace("Tony Lima", "Azul"));
+
+      document.write("<br/>");
+
+      //método substr() = recupera determinada string pré-definida
+      document.write(nome.substr(5, 4));
+
+      document.write("<br/>");
+
+      //toLowerCase/toUpperCase = lower define string para caixa baixa e o upper para CAIXA ALTA
+      document.write(nome.toLowerCase());
+
+      document.write("<br/>");
+
+      document.write(nome.toUpperCase());
+
+      document.write("<br/>");
+
+      //método trim() = remove os espaços em branco das extremidades das strings
+      var nome = " Azulyno Amil ";
+      document.write("-" + nome.trim() + "-");
+    </script>
+  </head>
+  <body></body>
+</html>

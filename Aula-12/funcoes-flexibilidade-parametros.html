@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções - Flexibilidade de parâmetros</title>
+
+    <script>
+      function soma(a, b) {
+        return a + b;
+      }
+
+      console.log(soma(7, 7));
+      console.log(soma(7, 7, 9, 15));
+      // console.log(soma(7, 7, 9, 15)); < aqui o javascript ignora os demais parâmetros, dessa forma
+      // evitando que a aplicação quebre
+      console.log(soma(7));
+      //   nesse outro exemplo o javascript soma 7(pois na função ele declara que espera dois parâmetros)+ undefined resultando em NaN (not a number)
+      console.log(soma()); //resulta em NaN pois o javascript somará undefined + undefined
+    </script>
+  </head>
+  <body></body>
+</html>
