@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos do teclado</title>
+    <script>
+      function acao1() {
+        alert("evento disparado");
+      }
+    </script>
+  </head>
+  <body>
+    <input onkeypress="acao1()" type="text" />
+  </body>
+</html>
+
+<!-- 
+    onkeydown > quando qualquer tecla que imprime carater é pressionada
+    onkeypress > o tempo em que a tecla esta sendo pressionada
+    onkeyup > quando a tecla retorna a posição de descanso o evento é capturado
+-->

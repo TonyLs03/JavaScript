@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos do mouse</title>
+    <script>
+      function acao1() {
+        alert("Elemento clicado");
+      }
+      function acao2() {
+        alert("O cursor saiu da região do elemento");
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      onclick="acao1()"
+      onmouseout="acao2()"
+      style="background: #ccc; height: 150px; width: 150px"
+    ></div>
+  </body>
+</html>
+
+<!-- 
+    onclick > evento disparado quando clicado 
+    ondblclick > evento disparado quando clicado 2x
+    onmouseup > elemento clicado e quando o clique é solto o evento é disparado
+    onmouseover > quando o mouse entra na area do elemento o evento instantaneamente é disparado
+    onmouseout > quando o cursor sai da area do elemento o evento é disparado
+    !podem ser combinados!
+-->
