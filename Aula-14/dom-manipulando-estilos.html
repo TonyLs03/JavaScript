@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom - manipulando estilos</title>
+    <script>
+      function modificaEstilo(corDeFundo, l, a) {
+        document.getElementById("square").style.background = corDeFundo;
+        document.getElementById("square").style.width = l;
+        document.getElementById("square").style.height = a;
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Manipulando estilos</h3>
+
+    <button type="button" onclick="modificaEstilo('#FF0000', '400px', '50px')">
+      Vermelho
+    </button>
+    <button type="button" onclick="modificaEstilo('#00FF00', '200px', '400px')">
+      Verde
+    </button>
+    <button type="button" onclick="modificaEstilo('#0000FF', '100px', '400px')">
+      Azul
+    </button>
+
+    <hr />
+    <div
+      style="border: solid 1px #000; width: 100px; height: 100px"
+      id="square"
+    ></div>
+  </body>
+</html>
