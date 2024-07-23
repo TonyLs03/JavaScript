@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - Array</title>
+    <script>
+      //var lista_frutas = Array();
+
+      var lista_frutas = [];
+
+      lista_frutas[1] = "Banana";
+      lista_frutas[2] = "Maçã";
+      lista_frutas["bolo"] = "Morango";
+      lista_frutas[4] = 100;
+
+      console.log(lista_frutas[1]);
+    </script>
+  </head>
+  <body></body>
+</html>
+
+<!-- 
+tanto o índice quanto o valor podem ser alterados, não necessariamente precisa ser 
+sequêncial, numérico, etc 
+
+array tbm pode ser escrito da seguinte forma: 
+  var lista_frutas = Array('Banana', 'Maça', 'Morango', 'Uva')
+
+  nesse caso o índice será atribuído automaticamente, o que quer dizer que para acessar o item
+  2 da lista eu necessite expressar o número 1, exemplo:
+
+  console.log(lista_frutas[1])
+  Maçã
+
+  outra forma de se escrever arrays é da seguinte maneira:
+  var lista_frutas = ['Banana', 'Maça', 'Morango', 'Uva']
+
+  o JavaScript compreende que se trata de array e gera índices automaticamente, seguindo
+  o mesmo padrão de acesso que os demais exemplos
+
+  console.log(lista_frutas[0])
+  Banana
+-->
