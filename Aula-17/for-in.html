@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - For In</title>
+    <script>
+      var lista_convidados = ["Jorge", "Jamilton", "José", "Ana", "Maria"];
+      console.log(lista_convidados);
+      for (var x in lista_convidados) {
+        console.log("Índice " + x + " valor " + lista_convidados[x]);
+      }
+    </script>
+    <script>
+      var listaConvidados = Array();
+
+      listaConvidados["a"] = "Jorge";
+      listaConvidados[10] = "Jamilton";
+      listaConvidados["zebra"] = "José";
+      listaConvidados[-1] = "Ana";
+      listaConvidados[true] = "Maria";
+
+      console.log(listaConvidados);
+
+      for (var x in listaConvidados) {
+        console.log("Índice " + x + " valor " + listaConvidados[x]);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
