@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOM - Screen</title>
+    <script>
+      var altura = window.screen.availHeight;
+      var largura = window.screen.availWidth;
+
+      //document.write("A Altura do navegador é: " + altura + "<br />");
+      //document.write("A Largura do navegador é: " + largura);
+
+      if (largura < 500) {
+        document.write("Lógica para impressão do menu versão MOBILE");
+      } else {
+        document.write("Lógica para impressão do menu versão WEB");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
